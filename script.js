@@ -1,6 +1,9 @@
 'use strict';
 
+//const _ = require('lodash');
 const Script = require('smooch-bot').Script;
+
+//const scriptRules = require('./script.json')
 
 module.exports = new Script({
     processing: {
@@ -10,7 +13,7 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say('Hi! I\'m Cat Bot!')
+            return bot.say('Hi! I\'m the HouseHelp Bot!')
                 .then(() => 'askName');
         }
     },
